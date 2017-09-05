@@ -6,6 +6,7 @@ public class Deck {
 
     // Get random item from array, then to delete swap with array[last] and last -= 1
     // This way it is O(1)
+    // Need to deal with error catching
     public Card DealCard(){
         int index = ThreadLocalRandom.current().nextInt(0,this.last + 1);
         Card out = this.Cards[index];

@@ -13,10 +13,12 @@ public class Card {
     }
 
     public Suit getSuit(){
-        return cardSuit;
+        return this.cardSuit;
     }
 
     public Value getValue(){
-        return cardValue;
+        return this.cardValue;
     }
+
+    public int getIntValue(){ return this.cardValue.toInt(); }
 }

@@ -4,6 +4,7 @@ public class Player {
     public HashSet<Card> Hand;
     private int id;
     private int score = 0;
+    private boolean human = false;
 
     public int getId(){
         return this.id;
@@ -17,7 +18,12 @@ public class Player {
         score += 1;
     }
 
-    public Player(int id){
+    public boolean IsHuman(){
+        return this.human;
+    }
+
+    public Player(int id, boolean human){
+        this.human = human;
         this.id = id;
     }
 }

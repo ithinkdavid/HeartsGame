@@ -21,4 +21,8 @@ public class Card {
     }
 
     public int getIntValue(){ return this.cardValue.toInt(); }
+
+    public String toString(){
+        return cardValue.toString() + " of " + cardSuit.toString();
+    }
 }
